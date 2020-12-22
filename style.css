@@ -23,17 +23,17 @@ body {
 }
 
 .about-image {
-    /*background: url(.jpg) no-repeat center center fixed;*/
-    height: 800px;
+    background: url(about.jpg) no-repeat center center fixed;
+/*    height: 800px;
     background-color: #cccccc;
-    background-image: linear-gradient(black, gray, white);
+    background-image: linear-gradient(black, gray, white);*/
 }
 
 .contact-image {
-    /*background: url(.jpg) no-repeat center center fixed;*/
-    height: 800px;
+    background: url(contact.jpg) no-repeat center center fixed;
+/*    height: 800px;
     background-color: #cccccc;
-    background-image: linear-gradient(black, gray, white);
+    background-image: linear-gradient(black, gray, white);*/
 }
 
 .nav-container {
