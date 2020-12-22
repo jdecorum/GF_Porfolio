@@ -16,15 +16,24 @@ body {
 }
 
 .works-image {
-    background: url(.jpg) no-repeat center center fixed;
+    /*background: url(.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: #cccccc;
+    background-image: linear-gradient(black, gray, white);
 }
 
 .about-image {
-    background: url(.jpg) no-repeat center center fixed;
+    /*background: url(.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: #cccccc;
+    background-image: linear-gradient(black, gray, white);
 }
 
 .contact-image {
-    background: url(.jpg) no-repeat center center fixed;
+    /*background: url(.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: #cccccc;
+    background-image: linear-gradient(black, gray, white);
 }
 
 .nav-container {
