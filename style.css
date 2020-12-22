@@ -1,13 +1,93 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-   background: url(header.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@import url(https://fonts.googleapis.com/css?family=Roboto:900|Roboto+Mono:300,400,700);@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main-image {
+    background: url(header.jpg) no-repeat center center fixed;
+}
+
+.works-image {
+    background: url(.jpg) no-repeat center center fixed;
+}
+
+.about-image {
+    background: url(.jpg) no-repeat center center fixed;
+}
+
+.contact-image {
+    background: url(.jpg) no-repeat center center fixed;
+}
+
+.nav-container {
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.25s;
+}
+
+.nav-link-wrapper a {
+    color: #fbfbfb;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #F05F44;
+}
+
+.nav-link-wrapper a:hover {
+    color: #F05F44;
+}
+
+.right-side {
+    color: #fbfbfb;
+}
+
+.brand {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.25s;
+}
+
+.brand a {
+    color: #fbfbfb;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.brand:hover {
+    border-bottom: 1px solid #F05F44;
+}
+
+.brand a:hover {
+    color: #F05F44;
 }
 
 h1 {
@@ -21,12 +101,35 @@ hr {
 	max-width: 65px;
 }
 
-.buffer {
-	height: 20rem;
+#typed-strings {
+    width: 30%;
+    margin: 0 auto;
 }
 
+.main-header {
+    text-align: center;
+}
+.buffer {
+    height: .5rem;
+}
+
+.buffer1 {
+    height: 1rem;
+}
+
+.buffer5 {
+	height: 7rem;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
 .btn {
-	font-weight:700;
+	/*font-weight:700;*/
+    color: #fbfbfb;
 	border-radius: 300px;
 	text-transform: uppercase;
 }
@@ -43,6 +146,101 @@ hr {
 .btn-primary:hover {
 	background-color: #ee4b08;
 	border-color: #ee4b08;
-	border-width: 4px;
-
+	border-width: 6px;
 }
+
+
+/*Above here is cerated from UDEMY Course*/
+/*Pulled from template*/
+/*.navbar {
+    display: none}
+.navbar {
+position: relative;
+min-height: 20px;
+margin-bottom: 19px;
+border: 1px solid transparent}
+.navbar:after,.navbar:before {
+    content: " ";
+    display: table}
+.navbar:after {
+    clear: both}
+@media (min-width: 768px) {
+    .navbar {
+    border-radius: 0}
+@media (min-width: 768px) {
+    .navbar>.container-fluid .navbar-brand,.navbar>.container .navbar-brand {
+    margin-left: -15px}
+}
+.navbar {
+    border: none;
+    min-height: inherit}
+@media (min-width: 768px) {
+    .navbar {
+    margin: 10px}
+}
+.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0}
+}
+.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse {
+    max-height: 340px}
+@media (max-device-width: 480px) and (orientation: landscape) {
+    .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse {
+    max-height: 200px}
+}
+.navbar-fixed-bottom,.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030}
+@media (min-width: 768px) {
+    .navbar-fixed-bottom,.navbar-fixed-top {
+    border-radius: 0}
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    }
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px}
+.container:after,.container:before {
+    content: " ";
+    display: table}
+.container:after {
+    clear: both}
+@media (min-width: 768px) {
+    .container {
+    width: 750px}
+}
+@media (min-width: 992px) {
+    .container {
+    width: 970px}
+}
+@media (min-width: 1200px) {
+    .container {
+    width: 500px}
+}
+.container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px}
+@media (min-width: 768px) {
+    .container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0}
+}
+@media (min-width: 768px) {
+    .navbar>.container-fluid .navbar-brand,.navbar>.container .navbar-brand {
+    margin-left: -15px}
+.row {
+    margin-left: 0px;
+    margin-right: 0px}
+.row:after,.row:before {
+    content: " ";
+    display: table}
+.row:after {
+    clear: both}*/
+
