@@ -12,7 +12,7 @@ body {
 }
 
 .main-image {
-    background: black url(header.jpg) no-repeat center center fixed;
+    background: black url(./assets/header.jpg) no-repeat center center fixed;
 }
 
 .works-image {
