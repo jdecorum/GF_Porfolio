@@ -98,12 +98,12 @@ body {
 
 h1 {
 	font-size: 2rem;
-	color: #F05F44;
+	color: rgb(255,255,255);
 }
 
 h2 {
     font-size: 2rem;
-    color: white;
+    color: #F05F44;
 }
 
 hr {
