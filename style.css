@@ -18,19 +18,19 @@ body {
 .works-image {
     /*background: url(works.jpg) no-repeat center center fixed;*/
     height: 800px;
-    background-color: rgb(5,10,15);
+    background-color: black;
 }
 
 .about-image {
     /*background: url(about.jpg) no-repeat center center fixed;*/
     height: 800px;
-    background-color: rgb(5,10,15);
+    background-color: black;
 }
 
 .contact-image {
     /*background: url(contact.jpg) no-repeat center center fixed;*/
     height: 800px;
-    background-color: rgb(5,10,15);
+    background-color: black;
 }
 
 .nav-container {
@@ -98,7 +98,12 @@ body {
 
 h1 {
 	font-size: 2rem;
-	color: #e2dbdb;
+	color: #F05F44;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
 }
 
 hr {
@@ -115,6 +120,7 @@ hr {
 .main-header {
     text-align: center;
 }
+
 .buffer {
     height: .5rem;
 }
