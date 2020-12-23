@@ -23,29 +23,133 @@
 		<link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 <body class="works-image">
-	<div class="nav-container">
-	    <div class="nav-wrapper">
-	        <div class="left-side">
-	          <div class="nav-link-wrapper">
-	            <a href="./index.html" title="">Home</a>
-	          </div>
-	          <div class="nav-link-wrapper">
-	            <a href="./works.html" title="">Works</a>
-	          </div>
-	          <div class="nav-link-wrapper">
-	            <a href="./about.html" title="">About me</a>
-	          </div>
-	          <div class="nav-link-wrapper">
-	            <a href="./contact.html" title="">Contact</a>
-	          </div>
-	        </div>
-	        <div class="right-side">
-	          <div class="brand">
-	            <a href="./about.html" title="">George Fernandez</a>
-	          </div>
-	        </div>
-	    </div>
-  	</div>
-	<h2>Coming Soon</h2>
+	<header>
+		<div class="nav-container">
+			<div class="nav-wrapper">
+				<div class="left-side">
+					<div class="nav-link-wrapper">
+						<a href="./index.html" title="">Home</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="./works.html" title="">Works</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="./about.html" title="">About me</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="./contact.html" title="">Contact</a>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="brand">
+						<a href="./about.html" title="">George Fernandez</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</header>
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(./assets/Project1.png)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="./assets/ProjectOne.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project One.
+			      </div>
+			    </div>
+
+			  </div>
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(images/portfolio2.jpg)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="images/logos/toastability.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project Two.
+			      </div>
+			    </div>
+
+			  </div>
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(images/portfolio3.jpg)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="images/logos/shop-hacker.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project Three.
+			      </div>
+			    </div>
+
+			  </div>
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(images/portfolio4.jpg)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="images/logos/open-devos.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project Four.
+			      </div>
+			    </div>
+
+			  </div>
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(images/portfolio5.jpg)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="images/logos/ministry-safe.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project Five.
+			      </div>
+			    </div>
+
+			  </div>
+			  <div class="portfolio-item-wrapper">
+			    <div class="portfolio-img-background" style = "background-image:url(images/portfolio6.jpg)"></div>
+
+			    <div class="img-text-wrapper">
+			      <div class="logo-wrapper">
+			        <img src="images/logos/eventbrite.png">
+			      </div>
+
+			      <div class="subtitle">
+			        Project Six.
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+    </div>
 </body>
+  <script type="text/javascript">
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+    });
+
+  </script>
 </html>
