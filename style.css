@@ -12,28 +12,25 @@ body {
 }
 
 .main-image {
-    background: url(header.jpg) no-repeat center center fixed;
+    background: black url(header.jpg) no-repeat center center fixed;
 }
 
 .works-image {
-    background: url(works.jpg) no-repeat center center fixed;
-    /*height: 800px;
-    background-color: #cccccc;
-    background-image: linear-gradient(black, gray, white);*/
+    /*background: url(works.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: rgb(5,10,15);
 }
 
 .about-image {
-    background: url(about.jpg) no-repeat center center fixed;
-/*    height: 800px;
-    background-color: #cccccc;
-    background-image: linear-gradient(black, gray, white);*/
+    /*background: url(about.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: rgb(5,10,15);
 }
 
 .contact-image {
-    background: url(contact.jpg) no-repeat center center fixed;
-/*    height: 800px;
-    background-color: #cccccc;
-    background-image: linear-gradient(black, gray, white);*/
+    /*background: url(contact.jpg) no-repeat center center fixed;*/
+    height: 800px;
+    background-color: rgb(5,10,15);
 }
 
 .nav-container {
