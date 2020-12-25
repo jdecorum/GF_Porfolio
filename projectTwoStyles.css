@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	/*background: lightblue;*/
+	/*padding: 50px;*/
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	min-height: 90vh;
+	width: 25rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	/*background:lightcoral;*/
+	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+}
+
+.cabinet {
+	min-height: 35vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cabinet img {
+	width: 17rem;
+	z-index: 2;
+}
+
+.cabColor {
+	width: 15rem;
+	height: 15rem;
+	background: linear-gradient(
+		to top,
+		rgba(4,64,169,1),
+		rgba(237,0,0,1)
+		);
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.info h1 {
+	font-size: 1.45rem;
+}
+
+.info h3 {
+	font-size: 1.17rem;
+	padding: .5rem 0rem;
+	color: #5858585;
+	font-weight: lighter;
+}
+
+.colors {
+	display: inline-block;
+	justify-content: space-between;
+}
+
+.colors button {
+	padding: 0.45rem 2.0rem;
+	background:none;
+	border: none;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #2872CD;
+}
+
+.top {
+	justify-content: space-between;
+	align-content: left;
+}
+
+.bottom {
+	justify-content: space-between;
+	align-content: left;
+}
+
+button.active {
+	background: #2872CD;
+	color: white;
+}
+
+.purchase {
+	margin-top: 5rem;
+}
+
+.purchase button {
+	width: 100%;
+	padding: 1rem 0rem;
+	background: #CE260C;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 30px;
+	font font-weight: bolder;
+}
