@@ -10,23 +10,26 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	perspective: 1000px;
+	/*used to see the container size--*/background: pink;
 }
 
 .container {
-	/*background: lightblue;*/
-	/*padding: 50px;*/
-	width: 30%;
+	/*used to see the container size--*/background: lightblue;
+	padding: 50px;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .card {
-	min-height: 90vh;
+	transform-style: preserve-3d; 
+	min-height: 80vh;
 	width: 25rem;
 	border-radius: 30px;
 	padding: 0rem 5rem;
-	/*background:lightcoral;*/
+	/*used to see the container size--*/background:lightcoral; 
 	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
 }
 
@@ -55,6 +58,9 @@ body {
 }
 
 .info h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 1.45rem;
 }
 
@@ -66,8 +72,8 @@ body {
 }
 
 .colors {
-	display: inline-block;
-	justify-content: space-between;
+	/*display: inline-block;
+	justify-content: space-between;*/
 }
 
 .colors button {
@@ -82,13 +88,24 @@ body {
 }
 
 .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px 5px;
+}
+
+.middle {
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	align-content: left;
+	padding: 5px;
 }
 
 .bottom {
-	justify-content: space-between;
-	align-content: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
 }
 
 button.active {
@@ -97,7 +114,7 @@ button.active {
 }
 
 .purchase {
-	margin-top: 5rem;
+	margin-top: 2rem;
 }
 
 .purchase button {
