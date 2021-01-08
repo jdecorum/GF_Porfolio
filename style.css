@@ -219,7 +219,9 @@ hr {
 
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr;
+    justify-content: center;
+    align-content: center;
 }
 
 .profile-image-wrapper {
@@ -227,13 +229,22 @@ hr {
 }
 
 .profile-content-wrapper {
-    padding: 20px;
+    /*padding: 20px;*/
+    max-width: 70ch;
 }
 
 .profile-content-wrapper h1 {
-    color: lightseagreen;
+    color: #ee4b08;
 }
 
+.profile-content-wrapper p {
+    color: #fbfbfb;
+}
+
+.profile-image-wrapper img {
+    max-width: 40rem;
+    display: flex;
+}
 
 /*Above here is cerated from UDEMY Course*/
 /*Pulled from template*/
