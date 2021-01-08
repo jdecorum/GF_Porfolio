@@ -1,94 +1,93 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	perspective: 1000px;
-	/*used to see the container size--background: pink;*/
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    /*used to see the container size--background: pink;*/
 }
 
 .container {
-	/*used to see the container size--background: lightblue;*/
-	/*padding: 50px;*/
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    /*used to see the container size--background: lightblue;*/
+    /*padding: 50px;*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-	transform-style: preserve-3d; 
-	min-height: 80vh;
-	width: 29rem;
-	border-radius: 30px;
-	padding: 0rem 3.5rem;
-	/*used to see the container size--background:lightcoral; */
-	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 29rem;
+    border-radius: 30px;
+    padding: 0rem 3.5rem;
+    /*used to see the container size--background:lightcoral; */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
 }
 
 .cabinet {
-	min-height: 35vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .cabinet img {
-	width: 17rem;
-	z-index: 2;
-	transition: all 0.75s ease-out;
+    width: 17rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
 }
 
 .cabColor {
-	width: 20rem;
-	height: 15rem;
-	background: linear-gradient(
-		to bottom,
-		rgba(250,250,250,1),
-		rgba(206,38,12,1)
-		);
-	position: absolute;
-	border-radius: 10%;
-	z-index: 1;
+    width: 20rem;
+    height: 15rem;
+    background: linear-gradient(to bottom,
+        rgba(250, 250, 250, 1),
+        rgba(206, 38, 12, 1));
+    position: absolute;
+    border-radius: 10%;
+    z-index: 1;
 }
 
 .info h1 {
-	/*display: flex;
+    /*display: flex;
 	align-items: center;
 	justify-content: center;*/
-	font-size: 3rem;
-	transition: all 0.75s ease-out;
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
 }
 
 .info h3 {
-	font-size: 1.3rem;
-	padding: 1rem 0rem;
-	color: #5858585;
-	font-weight: lighter;
- 	transition: all 0.75s ease-out;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    color: #5858585;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
 }
 
 .colors {
-	display: flex;
-	justify-content: space-between;
-	transition: all 0.75s ease-out;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
 }
 
 .colors button {
-	padding: 0.5rem 2.0rem;
-	background:none;
-	border: none;
-	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-	border-radius: 30px;
-	cursor: pointer;
-	font-weight: bold;
-	color: #2872CD;
+    padding: 0.5rem 2.0rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2872CD;
 }
 
 /*.top {
@@ -113,22 +112,22 @@ body {
 }*/
 
 button.active {
-	background: #2872CD;
-	color: white;
+    background: #2872CD;
+    color: white;
 }
 
 .purchase {
-  margin-top: 5rem;
-  transition: all 0.75s ease-out;
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
 }
 
 .purchase button {
-	width: 100%;
-	padding: 1rem 0rem;
-	background: #CE260C;
-	border: none;
-	color: white;
-	cursor: pointer;
-	border-radius: 30px;
-	font font-weight: bolder;
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #CE260C;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font font-weight: bolder;
 }
