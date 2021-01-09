@@ -247,95 +247,29 @@ hr {
 }
 
 /*Above here is cerated from UDEMY Course*/
-/*Pulled from template*/
-/*.navbar {
-    display: none}
-.navbar {
-position: relative;
-min-height: 20px;
-margin-bottom: 19px;
-border: 1px solid transparent}
-.navbar:after,.navbar:before {
-    content: " ";
-    display: table}
-.navbar:after {
-    clear: both}
-@media (min-width: 768px) {
-    .navbar {
-    border-radius: 0}
-@media (min-width: 768px) {
-    .navbar>.container-fluid .navbar-brand,.navbar>.container .navbar-brand {
-    margin-left: -15px}
-}
-.navbar {
-    border: none;
-    min-height: inherit}
-@media (min-width: 768px) {
-    .navbar {
-    margin: 10px}
-}
-.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0}
-}
-.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse {
-    max-height: 340px}
-@media (max-device-width: 480px) and (orientation: landscape) {
-    .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse {
-    max-height: 200px}
-}
-.navbar-fixed-bottom,.navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030}
-@media (min-width: 768px) {
-    .navbar-fixed-bottom,.navbar-fixed-top {
-    border-radius: 0}
-}
-.navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-    }
 
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px}
-.container:after,.container:before {
-    content: " ";
-    display: table}
-.container:after {
-    clear: both}
-@media (min-width: 768px) {
-    .container {
-    width: 750px}
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+h1 h2:after {content: ' - PHONE'; display: inline;}
 }
-@media (min-width: 992px) {
-    .container {
-    width: 970px}
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+h1 h2:after {content: ' - TABLET'; display: inline;}
 }
-@media (min-width: 1200px) {
-    .container {
-    width: 500px}
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+h1 h2:after {content: ' - DESKTOP'; display: inline;}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
 }
-.container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header {
-    margin-right: -15px;
-    margin-left: -15px}
-@media (min-width: 768px) {
-    .container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header {
-    margin-right: 0;
-    margin-left: 0}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
-@media (min-width: 768px) {
-    .navbar>.container-fluid .navbar-brand,.navbar>.container .navbar-brand {
-    margin-left: -15px}
-.row {
-    margin-left: 0px;
-    margin-right: 0px}
-.row:after,.row:before {
-    content: " ";
-    display: table}
-.row:after {
-    clear: both}*/
