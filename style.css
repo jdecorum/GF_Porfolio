@@ -34,6 +34,10 @@ body {
     background-color: black;
 }
 
+.animate__flipOutY {
+    animation-duration: 4.5s;  /*don't forget to set a duration! */
+}
+
 .nav-container {}
 
 .nav-wrapper {
